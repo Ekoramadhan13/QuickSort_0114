@@ -42,7 +42,7 @@ void swap(int x, int y)
 
 void q_short(int low, int high)
 {
-	
+
 	int temp;
 	int pivot, i, j;
 	if (low > high) { //step 1
@@ -76,4 +76,9 @@ void q_short(int low, int high)
 			swap(i, j);
 		}
 	}
-int main ()
+
+	if (low < j) { //step 11
+		//swap the pivot element with the element at index j
+		swap(low, j);
+	}
+}int main()
